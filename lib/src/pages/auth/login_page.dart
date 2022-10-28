@@ -1,10 +1,10 @@
 // ignore_for_file: file_names, camel_case_types
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:get/get.dart';
-import 'package:myapp/src/auth/controllers/login_controller.dart';
+import 'package:myapp/src/pages/auth/controllers/login_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:myapp/src/auth/newUser_page.dart';
-import 'package:myapp/src/base/base_page.dart';
+import 'package:myapp/src/pages/auth/newUser_page.dart';
+import 'package:myapp/src/pages/base/base_page.dart';
 import 'components/custom_text_field.dart';
 
 class loginPage extends StatefulWidget {

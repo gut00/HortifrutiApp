@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/src/home/home_tab.dart';
+import 'package:myapp/src/pages/home/home_tab.dart';
 
 class BasePage extends StatefulWidget {
   const BasePage({super.key});

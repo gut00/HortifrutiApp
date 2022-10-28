@@ -1,7 +1,7 @@
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
-import 'package:myapp/src/auth/components/custom_text_field.dart';
+import 'package:myapp/src/pages/auth/components/custom_text_field.dart';
 
 class NewUser extends StatelessWidget {
   NewUser({super.key});
