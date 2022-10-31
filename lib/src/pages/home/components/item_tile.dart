@@ -6,7 +6,10 @@ import 'package:myapp/src/services/utils_services.dart';
 class ItemTile extends StatelessWidget {
   final ItemModel item;
 
-  ItemTile({required this.item, super.key});
+  ItemTile({
+    super.key,
+    required this.item,
+  });
 
   final UtilServices utilServices = UtilServices();
 
@@ -19,7 +22,7 @@ class ItemTile extends StatelessWidget {
             Navigator.of(context).push(
               MaterialPageRoute(
                 builder: (c) {
-                  return const ProductsPage();
+                  return ProductsPage(item: item);
                 },
               ),
             );
@@ -36,7 +39,10 @@ class ItemTile extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Expanded(
-                    child: Image.asset(item.imgUrl),
+                    child: Hero(
+                      tag: item.imgUrl,
+                      child: Image.asset(item.imgUrl),
+                    ),
                   ),
                   Text(
                     item.itemName,
