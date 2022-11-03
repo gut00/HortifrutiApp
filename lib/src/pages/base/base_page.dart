@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/src/pages/cart/cart_tab.dart';
 import 'package:myapp/src/pages/home/home_tab.dart';
 
 class BasePage extends StatefulWidget {
@@ -20,13 +21,7 @@ class _BasePageState extends State<BasePage> {
         controller: pageController,
         children: [
           const HomeTab(),
-          Container(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                colors: [Colors.yellow, Colors.orange],
-              ),
-            ),
-          ),
+          CartTab(),
           Container(
             decoration: const BoxDecoration(
               gradient: LinearGradient(
